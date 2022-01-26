@@ -6,23 +6,14 @@ namespace ApiPeliculas.Modelos
     {
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(50)]
         public string Titulo { get; set; }
 
-        [Required]
-        [StringLength(50)]
         public string Director { get; set; }
 
-        [Required]
-        [StringLength(50)]
         public string Genero { get; set; }
 
-        [Required]
-        [StringLength(2)]
-        public int Rating { get; set; }
+        public string Rating { get; set; }
 
-        [Required]
         public DateTime AñoPublicacion { get; set; }
     }
 }
